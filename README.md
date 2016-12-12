@@ -1,6 +1,6 @@
 # Code Katas 
 
-## |||-|||-||-||-||-||-|
+## |||-|||-||-||-||-||-||-|
 
 ####Does my number look big in this? (6 kyu) |||
 
@@ -25,6 +25,20 @@
     def digital_root(n):
         return n%9 or n and 9
     ```
+
+#### Jaden Casing Strings (7 kyu) ||
+
+- Module: jaden_casing.py
+- Tests: test_jaden_casing.py
+- Link: https://www.codewars.com/kata/5390bac347d09b7da40006f6
+  - Interesting Solution by : [Azuaron](https://www.codewars.com/users/Azuaron), [Xavierxf-](https://www.codewars.com/users/Xavierxf-), [dalvarado](https://www.codewars.com/users/dalvarado), [swerty](https://www.codewars.com/users/swerty), [felixbr](https://www.codewars.com/users/felixbr), [wo0dyn](https://www.codewars.com/users/wo0dyn) (plus 92 more warriors):
+
+    ```python
+    def toJadenCase(string):        
+    return " ".join(w.capitalize() for w in string.split())
+    ```
+
+
 
 #### Regex validate PIN code (7 kyu) ||
 

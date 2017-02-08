@@ -14,7 +14,7 @@ script:
 # safelist
 branches:
   only:
-  - sort_cards
+  - sort-cards
 
 notifications:
   email: false

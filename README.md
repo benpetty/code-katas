@@ -115,7 +115,8 @@
 - Tests: test_find_smallest_int.py
 - Link: https://www.codewars.com/kata/55a2d7ebe362935a210000b2
   - Interesting solution by [z423x5c6](https://www.codewars.com/users/z423x5c6), [Azuaron](https://www.codewars.com/users/Azuaron), [suic](https://www.codewars.com/users/suic), [Chrisi](https://www.codewars.com/users/Chrisi), [pivek303](https://www.codewars.com/users/pivek303), [SleepingCode](https://www.codewars.com/users/SleepingCode) (plus 27 more warriors):
-    ```python
+
+	```python
     findSmallestInt=min
     ```
 
@@ -125,7 +126,7 @@
 - Tests: test_multiply.py
 - Link: https://www.codewars.com/kata/50654ddff44f800200000004
   - Interesting solution by [jihygk](https://www.codewars.com/users/jihygk):
-    ```python
+
+	```python
     multiply = __import__('operator').mul
     ```
-

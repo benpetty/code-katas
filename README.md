@@ -1,6 +1,6 @@
 # Code Katas 
 
-####Does my number look big in this? (6 kyu)
+### Does my number look big in this? (6 kyu)
 
 - Module: narcissistic.py
 - Tests: test_narcissistic.py
@@ -12,7 +12,7 @@
         return bool(value==sum([int(a) ** len(str(value)) for a in str(value)]))
     ```
 
-####Sum of Digits / Digital Root (6 kyu)
+### Sum of Digits / Digital Root (6 kyu)
 
 - Module: digital_root.py
 - Tests: test_digital_root.py
@@ -24,7 +24,22 @@
         return n%9 or n and 9
     ```
 
-#### Sum of the first nth term of Series (7 kyu)
+### Sort deck of cards (7 kyu)
+
+- Module: sort_cards.py
+
+- Tests: test_sort_cards.py
+
+- Link: https://www.codewars.com/kata/56f399b59821793533000683/
+
+  - Interesting solution by [zebulan](https://www.codewars.com/users/zebulan)
+
+    ```Python
+    def sort_cards(cards):
+        return sorted(cards, key="A23456789TJQK".index)
+    ```
+
+### Sum of the first nth term of Series (7 kyu)
 
 - Module: sum_of_nth.py
 - Tests: test_sum_terms.py
@@ -41,7 +56,7 @@
 
 
 
-#### Jaden Casing Strings (7 kyu)
+### Jaden Casing Strings (7 kyu)
 
 - Module: jaden_casing.py
 - Tests: test_jaden_casing.py
@@ -55,7 +70,7 @@
 
 
 
-#### Regex validate PIN code (7 kyu)
+### Regex validate PIN code (7 kyu)
 
 - Module: validate_pin.py
 - Tests: test_validate_pin.py
@@ -67,7 +82,7 @@
     return len(pin) in (4, 6) and pin.isdigit()
     ```
 
-#### Highest and Lowest (7 kyu)
+### Highest and Lowest (7 kyu)
 
 - Module: highest_and_lowest.py
 - Tests: test_highest_and_lowest.py
@@ -80,7 +95,7 @@
     return "%i %i" % (max(nn),min(nn))
     ```
 
-#### Get the Middle Character (7 kyu)
+### Get the Middle Character (7 kyu)
 
 - Module: get_middle.py
 - Tests: test_get_middle.py
@@ -92,7 +107,7 @@
         return s[(len(s)-1)/2:len(s)/2+1]
     ```
 
-#### Find the smallest integer in the array (7 kyu)
+### Find the smallest integer in the array (7 kyu)
 
 - Module: find_smallest_int.py
 - Tests: test_find_smallest_int.py
@@ -102,7 +117,7 @@
     findSmallestInt=min
     ```
 
-#### Multiply (8 kyu)
+### Multiply (8 kyu)
 
 - Module: multiply.py
 - Tests: test_multiply.py
@@ -111,5 +126,4 @@
     ```python
     multiply = __import__('operator').mul
     ```
-
 

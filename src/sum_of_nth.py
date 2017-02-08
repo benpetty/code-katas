@@ -23,7 +23,7 @@ NOTE: In PHP the function is called series_sum().
 
 
 def series_sum(n):
-    """Return the sum of the series upto nth term(parameter)."""
+    """Return the sum of the series up to nth term(parameter)."""
     answer = 0
     nth = 1
     while n > 1:

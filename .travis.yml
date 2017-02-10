@@ -15,7 +15,7 @@ script:
 # safelist
 branches:
   only:
-  - sort-cards
+  - forbes_top_40
 
 notifications:
   email: false

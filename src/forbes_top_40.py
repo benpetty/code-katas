@@ -22,7 +22,7 @@ import json
 
 def forbes():
     """Sort the richy guys."""
-    with open('data/forbes_billionaires_2016.json') as data_list:
+    with open('src/data/forbes_billionaires_2016.json') as data_list:
         data = data_list.read()
     if data[-3] == ',':
         data = data[:-3] + data[-2:]

@@ -1,9 +1,19 @@
 """Test digital_root function."""
 
+import pytest
 
-# test.assert_equals( digital_root(16), 7 )
-# test.assert_equals( digital_root(195), 6 )
-# test.assert_equals( digital_root(992), 2 )
-# test.assert_equals( digital_root(999999999999), 9 )
-# test.assert_equals( digital_root(167346), 9 )
-# test.assert_equals( digital_root(0), 0 )
+TEST_VARS = [
+    [16, 7],
+    [195, 6],
+    [992, 2],
+    [999999999999, 9],
+    [167346, 9],
+    [0, 0]
+]
+
+
+@pytest.mark.parametrize("param, answer", TEST_VARS)
+def test_digital_root(param, answer):
+    """Test digital root function."""
+    from digital_root import digital_root
+    assert digital_root(param) == answer

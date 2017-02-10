@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/benpetty/Code-Katas.svg?branch=forbes_top_40)](https://travis-ci.org/benpetty/Code-Katas) [![Coverage Status](https://coveralls.io/repos/github/benpetty/Code-Katas/badge.svg?branch=forbes_top_40)](https://coveralls.io/github/benpetty/Code-Katas?branch=forbes_top_40)
+[![Build Status](https://travis-ci.org/benpetty/Code-Katas.svg?branch=master)](https://travis-ci.org/benpetty/Code-Katas) [![Coverage Status](https://coveralls.io/repos/github/benpetty/Code-Katas/badge.svg?branch=master)](https://coveralls.io/github/benpetty/Code-Katas?branch=master)
 
 # Code Katas 
 

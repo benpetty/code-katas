@@ -14,7 +14,7 @@ script:
 # safelist
 branches:
   only:
-  - forbes_top_40
+  - master
 
 notifications:
   email: false

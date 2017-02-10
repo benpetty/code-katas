@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 u"""Forbes Top 40.
 
 Write a function that,

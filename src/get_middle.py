@@ -11,6 +11,7 @@ def get_middle(word):
     """Return the middle character(s) of a string."""
     chopped = list(word)
     if len(word) % 2 == 0:
-        return chopped[len(chopped) / 2 - 1] + chopped[len(chopped) / 2]
+        return (chopped[int(len(chopped) / 2 - 1)] +
+                chopped[int(len(chopped) / 2)])
     elif len(word) % 2 == 1:
-        return chopped[len(chopped) / 2]
+        return chopped[int(len(chopped) / 2)]

@@ -14,7 +14,7 @@ script:
 # safelist
 branches:
   only:
-  - fix-tests
+  - master
 
 notifications:
   email: false

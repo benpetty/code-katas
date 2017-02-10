@@ -24,12 +24,17 @@ NOTE: In PHP the function is called series_sum().
 
 def series_sum(n):
     """Return the sum of the series up to nth term(parameter)."""
-    answer = 0
-    nth = 1
+    answer = float(0)
+    nth = float(1)
+    print(nth)
     while n > 1:
         nth += 3
-        answer += 1 / nth
+        print("nth: ", nth)
+        answer += (1 / nth)
+        print('answer :', answer)
         n -= 1
+        print("n :", n)
     if n == 1:
         answer += 1
+        print("answer: ", answer)
     return str("{0:.2f}".format(answer))

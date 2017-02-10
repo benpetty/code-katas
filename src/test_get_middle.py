@@ -13,6 +13,6 @@ TEST_VARS = [
 
 @pytest.mark.parametrize("param, answer", TEST_VARS)
 def test_find_smalleset_int(param, answer):
-    """Test smallest int function."""
+    """Test get middle function."""
     from get_middle import get_middle
     assert get_middle(param) == answer

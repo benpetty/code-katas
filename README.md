@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/benpetty/Code-Katas.svg?branch=master)](https://travis-ci.org/benpetty/Code-Katas) [![Coverage Status](https://coveralls.io/repos/github/benpetty/Code-Katas/badge.svg?branch=master)](https://coveralls.io/github/benpetty/Code-Katas?branch=master)
-
+ 
 # Code Katas 
 
 ### Does my number look big in this? (6 kyu)

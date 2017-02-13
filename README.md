@@ -1,6 +1,10 @@
-[![Build Status](https://travis-ci.org/benpetty/Code-Katas.svg?branch=master)](https://travis-ci.org/benpetty/Code-Katas) [![Coverage Status](https://coveralls.io/repos/github/benpetty/Code-Katas/badge.svg?branch=master)](https://coveralls.io/github/benpetty/Code-Katas?branch=master)
- 
+[![Build Status](https://travis-ci.org/benpetty/Code-Katas.svg?branch=codingbat)](https://travis-ci.org/benpetty/Code-Katas) [![Coverage Status](https://coveralls.io/repos/github/benpetty/Code-Katas/badge.svg?branch=codingbat)](https://coveralls.io/github/benpetty/Code-Katas?branch=codingbat)
+
 # Code Katas 
+
+Various coding challenges and my solutions. Descriptions in source code.
+
+***
 
 ### Does my number look big in this? (6 kyu)
 
@@ -14,6 +18,8 @@
         return bool(value==sum([int(a) ** len(str(value)) for a in str(value)]))
     ```
 
+***
+
 ### Sum of Digits / Digital Root (6 kyu)
 
 - Module: `digital_root.py`
@@ -25,6 +31,8 @@
     def digital_root(n):
         return n%9 or n and 9
     ```
+
+***
 
 ### Sort deck of cards (7 kyu)
 
@@ -40,6 +48,8 @@
     def sort_cards(cards):
         return sorted(cards, key="A23456789TJQK".index)
     ```
+
+***
 
 ### Sum of the first nth term of Series (7 kyu)
 
@@ -57,6 +67,7 @@
     ```
 
 
+***
 
 ### Jaden Casing Strings (7 kyu)
 
@@ -71,6 +82,7 @@
     ```
 
 
+***
 
 ### Regex validate PIN code (7 kyu)
 
@@ -83,6 +95,8 @@
     def validate_pin(pin):
     return len(pin) in (4, 6) and pin.isdigit()
     ```
+
+***
 
 ### Highest and Lowest (7 kyu)
 
@@ -97,6 +111,8 @@
     return "%i %i" % (max(nn),min(nn))
     ```
 
+***
+
 ### Get the Middle Character (7 kyu)
 
 - Module: `get_middle.py`
@@ -109,6 +125,8 @@
         return s[(len(s)-1)/2:len(s)/2+1]
     ```
 
+***
+
 ### Find the smallest integer in the array (7 kyu)
 
 - Module: `find_smallest_int.py`
@@ -119,6 +137,9 @@
   ```python
     findSmallestInt=min
   ```
+
+
+***
 
 ### Multiply (8 kyu)
 
@@ -138,4 +159,25 @@
 - Module: `forbes_top_40.py`
 - Tests: `test_multiply.py`
 - Collaborated with Joey DeRosa and Rick Valenzuela to find the solution I implemented.
+
+
+***
+
+### Count Code
+
+- Module: `count_code.py`
+
+- Tests: `test_count_code.py`
+
+- Link: [http://codingbat.com/prob/p186048](http://codingbat.com/prob/p186048)
+
+***
+
+Double Char
+
+- Module: `double_char.py`
+- Tests: `test_double_char.py`
+- Link: [http://codingbat.com/prob/p170842](http://codingbat.com/prob/p170842)
+
+***
 

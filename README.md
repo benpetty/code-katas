@@ -173,7 +173,7 @@ Various coding challenges and my solutions. Descriptions in source code.
 
 ***
 
-Double Char
+### Double Char
 
 - Module: `double_char.py`
 - Tests: `test_double_char.py`

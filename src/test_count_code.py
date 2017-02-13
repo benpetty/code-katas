@@ -21,6 +21,6 @@ TEST_VARS = [
 
 @pytest.mark.parametrize("param, answer", TEST_VARS)
 def test_count_code(param, answer):
-    """Test digital root function."""
+    """Test."""
     from count_code import count_code
     assert count_code(param) == answer

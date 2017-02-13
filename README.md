@@ -173,3 +173,11 @@ Various coding challenges and my solutions. Descriptions in source code.
 
 ***
 
+Double Char
+
+- Module: `double_char.py`
+- Tests: `test_double_char.py`
+- Link: [http://codingbat.com/prob/p170842](http://codingbat.com/prob/p170842)
+
+***
+

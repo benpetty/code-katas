@@ -14,7 +14,7 @@ script:
 # safelist
 branches:
   only:
-  - autocomplete
+  - flight-paths
 
 notifications:
   email: false

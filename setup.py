@@ -25,6 +25,7 @@ setup(
         'sort_cards',
         'sum_of_nth',
         'validate_pin',
+        'flight_paths.py',
     ],
     package_dir={'': 'src'},
     install_requires=[''],

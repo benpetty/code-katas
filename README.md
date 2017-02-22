@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/benpetty/code-katas.svg?branch=autocomplete)](https://travis-ci.org/benpetty/code-katas) [![Coverage Status](https://coveralls.io/repos/github/benpetty/code-katas/badge.svg?branch=autocomplete)](https://coveralls.io/github/benpetty/code-katas?branch=autocomplete)
+[![Build Status](https://travis-ci.org/benpetty/code-katas.svg?branch=flight-paths)](https://travis-ci.org/benpetty/code-katas) [![Coverage Status](https://coveralls.io/repos/github/benpetty/code-katas/badge.svg?branch=flight-paths)](https://coveralls.io/github/benpetty/code-katas?branch=flight-paths)
 
 # Code Katas
 

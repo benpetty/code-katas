@@ -14,7 +14,7 @@ script:
 # safelist
 branches:
   only:
-  - master
+  - autocomplete
 
 notifications:
   email: false

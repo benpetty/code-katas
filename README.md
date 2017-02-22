@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/benpetty/Code-Katas.svg?branch=master)](https://travis-ci.org/benpetty/Code-Katas) [![Coverage Status](https://coveralls.io/repos/github/benpetty/Code-Katas/badge.svg?branch=master)](https://coveralls.io/github/benpetty/Code-Katas?branch=master)
+[![Build Status](https://travis-ci.org/benpetty/code-katas.svg?branch=autocomplete)](https://travis-ci.org/benpetty/code-katas) [![Coverage Status](https://coveralls.io/repos/github/benpetty/code-katas/badge.svg?branch=autocomplete)](https://coveralls.io/github/benpetty/code-katas?branch=autocomplete)
 
-# Code Katas 
+# Code Katas
 
-Various coding challenges and my solutions. Descriptions in source code.
+Various coding challenges and my solutions. Descriptions in source code comments.
 
 ***
 
@@ -151,6 +151,12 @@ Various coding challenges and my solutions. Descriptions in source code.
   ```python
     multiply = __import__('operator').mul
   ```
+
+***
+
+### Autocomplete
+- Module: `autocomplete.py`
+- Tests: `test_autocomplete.py`
 
 ***
 

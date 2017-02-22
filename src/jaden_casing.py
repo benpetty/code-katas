@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Jaden Casing Strings.
 
 Jaden Smith, the son of Will Smith,

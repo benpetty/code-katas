@@ -2,7 +2,7 @@
 
 # Code Katas 
 
-Various coding challenges and my solutions. Descriptions in source code.
+Various coding challenges and my solutions. Descriptions in source code comments.
 
 ***
 
@@ -151,6 +151,12 @@ Various coding challenges and my solutions. Descriptions in source code.
   ```python
     multiply = __import__('operator').mul
   ```
+
+***
+
+### Autocomplete
+- Module: `autocomplete.py`
+- Tests: `test_autocomplete.py`
 
 ***
 

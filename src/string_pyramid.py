@@ -51,7 +51,19 @@ If the string is null or empty,
 
 def watch_pyramid_from_the_side(characters):
     """."""
-    pass
+    result = []
+    spaces = 0
+    count = len(characters)
+    for char in characters:
+        row = (
+            (" " * spaces) +
+            (char * (count * 2 - 1)) +
+            (" " * spaces)
+        )
+        result.append(row)
+        spaces += 1
+        count -= 1
+    print("\n".join(reversed(result)))
 
 
 def watch_pyramid_from_above(characters):

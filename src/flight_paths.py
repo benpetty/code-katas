@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Python Practice: Distance Between Points.
 
 Below is a function that will calculate the shortest distance
@@ -32,6 +33,8 @@ a limit to the distance between any two cities.
 is less than or equal to that limit.
 """
 
+import json
+
 
 def calculate_distance(point1, point2):
     """
@@ -61,3 +64,10 @@ def calculate_distance(point1, point2):
          )
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
     return radius_earth * c / 1.60934  # convert km to miles
+
+
+def fp(departs='Seattle', arrives='Tokyo'):
+    """."""
+    with open('flight_paths_cities.json') as json_data:
+        data = json.load(json_data)
+        return data

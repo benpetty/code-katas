@@ -50,32 +50,62 @@ If the string is null or empty,
 
 
 def watch_pyramid_from_the_side(characters):
-    """."""
-    result = []
-    spaces = 0
-    count = len(characters)
-    for char in characters:
-        row = (
-            (" " * spaces) +
-            (char * (count * 2 - 1)) +
-            (" " * spaces)
-        )
-        result.append(row)
-        spaces += 1
-        count -= 1
-    print("\n".join(reversed(result)))
+    """Show the pyramid as you would see from the side."""
+    if characters == "":
+        return ""
+    elif characters:
+        result = []
+        spaces = 0
+        count = len(characters)
+        for char in characters:
+            row = (
+                (" " * spaces) +
+                (char * (count * 2 - 1)) +
+                (" " * spaces)
+            )
+            result.append(row)
+            spaces += 1
+            count -= 1
+        return ("\n".join(reversed(result)))
+    return None
 
 
 def watch_pyramid_from_above(characters):
-    """."""
-    pass
+    """Show the pyramid as you would see from above."""
+    if characters == "":
+        return ""
+    elif characters:
+        result = []
+        size = len(characters)
+        for i in range(size):
+            row = (
+                characters[:i] +
+                characters[i] *
+                len(characters[i:])
+            )
+            result.append(row)
+            result[i] += result[i][-2::-1]
+        for i in range(size - 2, -1, -1):
+            result.append(result[i])
+        return ("\n".join(result))
+    return None
 
 
 def count_visible_characters_of_the_pyramid(characters):
-    """."""
-    pass
+    """Return the count of all visible characters."""
+    if characters:
+        count = (2 * len(characters) - 1) ** 2
+        return count
+    return -1
 
 
 def count_all_characters_of_the_pyramid(characters):
-    """."""
-    pass
+    """Return count of all characters of the pyramid."""
+    if characters:
+        count = 0
+        for i in range(len(characters)):
+            count += count_visible_characters_of_the_pyramid(
+                characters[i:]
+            )
+        return count
+    return -1

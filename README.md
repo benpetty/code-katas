@@ -1,8 +1,16 @@
-[![Build Status](https://travis-ci.org/benpetty/code-katas.svg?branch=autocomplete)](https://travis-ci.org/benpetty/code-katas) [![Coverage Status](https://coveralls.io/repos/github/benpetty/code-katas/badge.svg?branch=autocomplete)](https://coveralls.io/github/benpetty/code-katas?branch=autocomplete)
+[![Build Status](https://travis-ci.org/benpetty/code-katas.svg?branch=string-pyramid)](https://travis-ci.org/benpetty/code-katas) [![Coverage Status](https://coveralls.io/repos/github/benpetty/code-katas/badge.svg?branch=string-pyramid)](https://coveralls.io/github/benpetty/code-katas?branch=string-pyramid)
 
 # Code Katas
 
 Various coding challenges and my solutions. Descriptions in source code comments.
+
+***
+
+### String Pyramid (6 kyu)
+
+- Module: `string_pyramid.py`
+- Tests: `test_string_pyramid.py`
+- Link: https://www.codewars.com/kata/5797d1a9c38ec2de1f00017b
 
 ***
 

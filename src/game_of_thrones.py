@@ -25,7 +25,7 @@ def game_of_thrones(states, days):
         left, right = 0, 0
         if i != 0:
             left = states[i - 1]
-        if i != 7:
+        if i != len(states) - 1:
             right = states[i + 1]
 
         if left == right:
@@ -33,4 +33,4 @@ def game_of_thrones(states, days):
         else:
             next_state.append(1)
 
-    return game_of_thrones(next_state, days -1)
+    return game_of_thrones(next_state, days - 1)

@@ -4,7 +4,7 @@ import itertools
 def minimum_time(parts):
     """Return minimum possible time to put list of parts together.
 
-    Parts reprepresented by list of numbers representing each part's size.
+    Parts represented by list of numbers representing each part's size.
     Can only combine two parts at a time.
     Time required to combine 2 parts == sum of the parts sizes.
     Size of new part == sum of the parts sizes.

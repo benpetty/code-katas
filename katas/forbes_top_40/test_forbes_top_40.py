@@ -13,7 +13,7 @@ TEST_VARS = [
 
 
 @pytest.mark.parametrize("param", TEST_VARS)
-def test_sort_cards_phil_knight(param):
+def test_forbes_top_40(param):
     """Function should return the test vars."""
     from .forbes_top_40 import forbes
     assert param in forbes()

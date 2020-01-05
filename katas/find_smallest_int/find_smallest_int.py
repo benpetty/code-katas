@@ -1,4 +1,6 @@
-"""Find the smallest integer in the array (7 kyu).
+"""Find the smallest integer in the array (8 kyu).
+
+https://www.codewars.com/kata/55a2d7ebe362935a210000b2
 
 Given an array of integers your solution should find the smallest integer.
 
@@ -12,4 +14,4 @@ that the supplied array will not be empty.
 
 def find_smallest_int(arr):
     """Return the integer with the lowest value in arr."""
-    return sorted(arr)[0]
+    return min(arr)

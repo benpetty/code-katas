@@ -1,5 +1,7 @@
 """String pyramid.
 
+https://www.codewars.com/kata/5797d1a9c38ec2de1f00017b
+
 This pyramid should be built from characters from a given string.
 
 You have to create the code for these four methods:

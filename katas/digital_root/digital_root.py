@@ -1,5 +1,7 @@
 """Sum of Digits / Digital Root (6 kyu).
 
+https://www.codewars.com/kata/541c8630095125aba6000c00
+
 In this kata, you must create a digital root function.
 A digital root is the recursive sum of all the digits in a number.
 Given n, take the sum of the digits of n.

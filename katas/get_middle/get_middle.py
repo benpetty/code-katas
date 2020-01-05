@@ -1,5 +1,7 @@
 """Get the Middle Character (7 kyu).
 
+https://www.codewars.com/kata/56747fd5cb988479af000028
+
 You are going to be given a word.
 Your job is to return the middle character of the word.
 If the word's length is odd, return the middle character.

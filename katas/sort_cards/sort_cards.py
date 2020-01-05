@@ -1,5 +1,7 @@
 """Sort Cards.
 
+https://www.codewars.com/kata/56f399b59821793533000683
+
 Write a function sort_cards() that sorts a shuffled list of cards,
 so that any given list of cards is sorted by rank,
 no matter the starting collection.

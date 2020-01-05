@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """Jaden Casing Strings.
 
+https://www.codewars.com/kata/5390bac347d09b7da40006f6
+
 Jaden Smith, the son of Will Smith,
 is the star of films such as The Karate Kid (2010) and After Earth (2013).
 Jaden is also known for some of his philosophy that he delivers via Twitter.

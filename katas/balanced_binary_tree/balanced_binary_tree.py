@@ -28,6 +28,12 @@ Here's a sample binary tree node class:
 
 
 def is_balanced(tree_root):
+    """
+
+    Complexity:
+        O(n) time and O(n) space.
+
+    """
 
     # A tree with no nodes is superbalanced, since there are no leaves!
     if tree_root is None:

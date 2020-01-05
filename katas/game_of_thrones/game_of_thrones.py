@@ -21,12 +21,12 @@ def game_of_thrones(states, days):
         return states
 
     next_state = []
-    for i in range(len(states)):
+    for idx in range(len(states)):
         left, right = 0, 0
-        if i != 0:
-            left = states[i - 1]
-        if i != len(states) - 1:
-            right = states[i + 1]
+        if idx != 0:
+            left = states[idx - 1]
+        if idx != len(states) - 1:
+            right = states[idx + 1]
 
         if left == right:
             next_state.append(0)

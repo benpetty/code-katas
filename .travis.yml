@@ -10,7 +10,7 @@ install:
 
 # command to run tests
 script:
-  - py.test katas --cov=katas --cov-report term-missing
+  - pytest katas --cov=katas --cov-report term-missing
 
 notifications:
   email: false

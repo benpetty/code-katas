@@ -14,7 +14,7 @@ install:
 # Run all tests
 test:
 	\
-	pytest; \
+	pytest katas --cov=katas --cov-report term-missing; \
 	npm test
 
 

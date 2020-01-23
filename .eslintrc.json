@@ -1,0 +1,17 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "experimentalObjectRestSpread": true,
+          "module": true,
+          "jsx": true
+        }
+    },
+    "rules": {
+        "object-curly-spacing": [1, "always"],
+        "semi": ["error", "always"],
+        "indent": ["error", 2]
+    }
+}

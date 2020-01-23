@@ -1,0 +1,11 @@
+[run]
+omit =
+    *__init__*
+    *test_*
+
+[report]
+omit =
+    *__init__*
+    *test_*
+exclude_lines =
+    if __name__ == .__main__.:

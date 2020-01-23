@@ -12,7 +12,6 @@ setup(
         'testing': [
             'pytest',
             'pytest-cov',
-            'tox',
             'coveralls',
         ]
     }

@@ -60,15 +60,11 @@ def watch_pyramid_from_the_side(characters):
         spaces = 0
         count = len(characters)
         for char in characters:
-            row = (
-                (" " * spaces) +
-                (char * (count * 2 - 1)) +
-                (" " * spaces)
-            )
+            row = (" " * spaces) + (char * (count * 2 - 1)) + (" " * spaces)
             result.append(row)
             spaces += 1
             count -= 1
-        return ("\n".join(reversed(result)))
+        return "\n".join(reversed(result))
     return None
 
 
@@ -80,16 +76,12 @@ def watch_pyramid_from_above(characters):
         result = []
         size = len(characters)
         for i in range(size):
-            row = (
-                characters[:i] +
-                characters[i] *
-                len(characters[i:])
-            )
+            row = characters[:i] + characters[i] * len(characters[i:])
             result.append(row)
             result[i] += result[i][-2::-1]
         for i in range(size - 2, -1, -1):
             result.append(result[i])
-        return ("\n".join(result))
+        return "\n".join(result)
     return None
 
 
@@ -106,8 +98,6 @@ def count_all_characters_of_the_pyramid(characters):
     if characters:
         count = 0
         for i in range(len(characters)):
-            count += count_visible_characters_of_the_pyramid(
-                characters[i:]
-            )
+            count += count_visible_characters_of_the_pyramid(characters[i:])
         return count
     return -1

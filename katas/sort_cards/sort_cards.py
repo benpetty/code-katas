@@ -26,8 +26,21 @@ that input list is always going to have at least 1 element.
 
 def sort_cards(cards):
     """Input a list of strings representing cards and return them sorted."""
-    rank = {'A': 0, '2': 1, '3': 2, '4': 3, '5': 4, '6': 5, '7': 6,
-            '8': 7, '9': 8, 'T': 9, 'J': 10, 'Q': 11, 'K': 12}
+    rank = {
+        "A": 0,
+        "2": 1,
+        "3": 2,
+        "4": 3,
+        "5": 4,
+        "6": 5,
+        "7": 6,
+        "8": 7,
+        "9": 8,
+        "T": 9,
+        "J": 10,
+        "Q": 11,
+        "K": 12,
+    }
     ranked = []
     for card in cards:
         card = str(card).upper()

@@ -16,4 +16,4 @@ def minimum_time(parts):
     [1, 2, 5, 10, 35, 89] returns 224
     """
     parts.sort()
-    return sum(list(itertools.accumulate(parts, lambda x,y: x+y))[1:])
+    return sum(list(itertools.accumulate(parts, lambda x, y: x + y))[1:])

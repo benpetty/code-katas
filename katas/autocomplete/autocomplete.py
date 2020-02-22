@@ -75,5 +75,5 @@ class AutoCompleter(object):
                 if complete_me in word:
                     suggestions.append(word)
         else:
-            return 'You must enter a valid string'
+            return "You must enter a valid string"
         return suggestions

@@ -14,4 +14,5 @@ TEST_VARS = [
 def test_sum_of_nth(param, answer):
     """Code wars tests."""
     from .sum_of_nth import series_sum
+
     assert series_sum(param) == answer

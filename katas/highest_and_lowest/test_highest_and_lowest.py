@@ -18,4 +18,5 @@ TEST_VARS = [
 def test_highest_and_lowest(param, answer):
     """Test smallest int function."""
     from .highest_and_lowest import high_and_low
+
     assert high_and_low(param) == answer

@@ -1,10 +1,9 @@
 import unittest
 from .balanced_binary_tree import is_balanced
 
+
 class Test(unittest.TestCase):
-
     class BinaryTreeNode(object):
-
         def __init__(self, value):
             self.value = value
             self.left = None

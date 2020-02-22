@@ -28,4 +28,5 @@ TEST_VARS = [
 def test_validate_pin(param, answer):
     """Test validate pin."""
     from .validate_pin import vp
+
     assert vp(param) == answer

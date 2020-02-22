@@ -1,4 +1,3 @@
-
 def gcd(x, y):
     """
     In mathematics, the Euclidean algorithm, or Euclid's algorithm, is an

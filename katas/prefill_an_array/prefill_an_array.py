@@ -33,9 +33,10 @@ Code Examples
       --> throws TypeError with message "xyz is invalid"
 """
 
-def prefill(n,v=None):
+
+def prefill(n, v=None):
     try:
         n = int(n)
     except (ValueError, TypeError):
-        raise TypeError('{} is invalid'.format(n))
+        raise TypeError("{} is invalid".format(n))
     return [v] * n

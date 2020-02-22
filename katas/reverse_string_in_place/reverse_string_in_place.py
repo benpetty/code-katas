@@ -14,6 +14,7 @@ Python 3.6's immutable strings.
 
 """
 
+
 def reverse(list_of_chars):
     """
 
@@ -22,11 +23,13 @@ def reverse(list_of_chars):
 
     """
 
-    left  = 0
+    left = 0
     right = len(list_of_chars) - 1
 
     while left < right:
-        list_of_chars[left], list_of_chars[right] = \
-            list_of_chars[right], list_of_chars[left]
+        list_of_chars[left], list_of_chars[right] = (
+            list_of_chars[right],
+            list_of_chars[left],
+        )
         left += 1
         right -= 1

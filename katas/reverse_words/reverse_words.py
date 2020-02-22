@@ -33,6 +33,7 @@ When writing your function, assume the message contains only letters and
 spaces, and all words are separated by one space.
 """
 
+
 def reverse_words(message):
     """
 
@@ -45,14 +46,13 @@ def reverse_words(message):
     current_word_start_index = 0
 
     for idx in range(num_chars + 1):
-        if idx == num_chars or message[idx] == ' ':
+        if idx == num_chars or message[idx] == " ":
             reverse_characters(message, current_word_start_index, idx - 1)
             current_word_start_index = idx + 1
 
 
 def reverse_characters(message, left, right):
     while left < right:
-        message[left], message[right] = \
-            message[right], message[left]
+        message[left], message[right] = message[right], message[left]
         left += 1
         right -= 1

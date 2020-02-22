@@ -14,4 +14,5 @@ TEST_VARS = [
 def test_narc(param, answer):
     """Test narc function."""
     from .narcissistic import narcissistic
+
     assert narcissistic(param) == answer

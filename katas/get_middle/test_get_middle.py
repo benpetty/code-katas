@@ -15,4 +15,5 @@ TEST_VARS = [
 def test_get_middle(param, answer):
     """Test get middle function."""
     from .get_middle import get_middle
+
     assert get_middle(param) == answer

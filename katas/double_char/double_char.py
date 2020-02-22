@@ -12,4 +12,4 @@ double_char('Hi-There') -> 'HHii--TThheerree'
 
 
 def double_char(string):
-    return ''.join([(char * 2) for char in string])
+    return "".join([(char * 2) for char in string])

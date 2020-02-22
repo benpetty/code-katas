@@ -32,8 +32,8 @@ def series_sum(n):
     while n > 1:
         nth += 3
         print("nth: ", nth)
-        answer += (1 / nth)
-        print('answer :', answer)
+        answer += 1 / nth
+        print("answer :", answer)
         n -= 1
         print("n :", n)
     if n == 1:

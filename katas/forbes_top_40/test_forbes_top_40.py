@@ -3,12 +3,12 @@
 import pytest
 
 TEST_VARS = [
-    'Phil Knight',
+    "Phil Knight",
     24400000000,
-    'Nike',
-    'Mark Zuckerberg',
+    "Nike",
+    "Mark Zuckerberg",
     44600000000,
-    'Facebook',
+    "Facebook",
 ]
 
 
@@ -16,4 +16,5 @@ TEST_VARS = [
 def test_forbes_top_40(param):
     """Function should return the test vars."""
     from .forbes_top_40 import forbes
+
     assert param in forbes()

@@ -23,4 +23,4 @@ def high_and_low(numbers):
     """Return the highest and lowest numbers from a string."""
     numbers = sorted(list(map(int, numbers.split())))
     numbers = str([numbers[-1], numbers[0]])
-    return numbers[1:-1].replace(',', '')
+    return numbers[1:-1].replace(",", "")

@@ -1,10 +1,9 @@
-
 import unittest
 
 from .cafe_order_checker import is_first_come_first_served
 
-class Test(unittest.TestCase):
 
+class Test(unittest.TestCase):
     def test_both_registers_have_same_number_of_orders(self):
         result = is_first_come_first_served([1, 4, 5], [2, 3, 6], [1, 2, 3, 4, 5, 6])
         self.assertTrue(result)

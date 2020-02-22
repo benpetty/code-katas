@@ -3,7 +3,6 @@ from .merging_ranges import merge_ranges
 
 
 class Test(unittest.TestCase):
-
     def test_meetings_overlap(self):
         actual = merge_ranges([(1, 3), (2, 4)])
         expected = [(1, 4)]

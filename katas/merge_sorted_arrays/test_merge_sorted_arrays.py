@@ -2,8 +2,8 @@ import unittest
 
 from .merge_sorted_arrays import merge_lists
 
-class Test(unittest.TestCase):
 
+class Test(unittest.TestCase):
     def test_both_lists_are_empty(self):
         actual = merge_lists([], [])
         expected = []

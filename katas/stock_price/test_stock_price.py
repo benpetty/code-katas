@@ -3,7 +3,6 @@ from .stock_price import get_max_profit
 
 
 class Test(unittest.TestCase):
-
     def test_price_goes_up_then_down(self):
         actual = get_max_profit([1, 5, 3, 2])
         expected = 4

@@ -22,5 +22,6 @@ Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
 def jaden_casing(quote):
     """Convert words in string to title case."""
     import string
+
     quote = string.capwords(quote)
     return quote

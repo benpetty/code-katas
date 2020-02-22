@@ -26,9 +26,9 @@ Examples:
 def is_valid(code):
 
     BRACKETS = {
-        '(' : ')',
-        '{' : '}',
-        '[' : ']',
+        "(": ")",
+        "{": "}",
+        "[": "]",
     }
     OPENERS = set(BRACKETS.keys())
     CLOSERS = set(BRACKETS.values())

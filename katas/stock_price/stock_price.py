@@ -38,7 +38,7 @@ def get_max_profit(stock_prices):
         O(n) time and O(1) space. We only loop through the list once.
     """
     if len(stock_prices) < 2:
-        raise ValueError('Getting a profit requires at least 2 prices')
+        raise ValueError("Getting a profit requires at least 2 prices")
 
     min_price = stock_prices[0]
     max_profit = stock_prices[1] - stock_prices[0]

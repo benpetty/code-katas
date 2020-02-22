@@ -23,4 +23,5 @@ TEST_VARS = [
 def test_find_smalleset_int(param, answer):
     """Test smallest int function."""
     from .find_smallest_int import find_smallest_int
+
     assert find_smallest_int(param) == answer

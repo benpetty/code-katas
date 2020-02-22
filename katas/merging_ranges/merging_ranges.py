@@ -36,6 +36,7 @@ the challenge is to merge meetings where start_time and end_time don't have an
 upper bound.
 """
 
+
 def merge_ranges(meetings):
     """
 

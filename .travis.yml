@@ -3,7 +3,7 @@ jobs:
     - stage: Test JavaScript
       language: node_js
       node_js: 12
-      before_install: npm run linter
+      before_script: npm run linter
       workspaces:
         create:
           name: coverage

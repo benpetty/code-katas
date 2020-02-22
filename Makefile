@@ -1,34 +1,33 @@
-# Install project in fresh virtual environment named "env"
-# Overwrites exisiting "env" folder
-install:
-	\
-	rm -rf env; \
-	python3 -m venv env; \
-	source env/bin/activate; \
-	pip install --upgrade pip; \
-	pip3 install -r requirements.txt; \
-	pip3 install .;\
-	npm i
+.PHONY: install test container container.shell
+install: .install.python .install.javascript
 
 
-# Run all tests
-test:
-	\
-	pytest katas --cov=katas --cov-report term-missing; \
+env:
+	python3 -m venv env
+
+
+.install.python: | env
+	python3 -m venv env && \
+	source env/bin/activate && \
+	pip install --upgrade pip && \
+	pip3 install -r requirements.txt && \
+	pip3 install .
+
+
+.install.javascript:
+	@npm i
+
+
+test: | env
+	source env/bin/activate && \
+	pytest && \
 	npm test
 
 
-# Build a docker container to run all the tests.
 container:
-	\
-	docker build -t code-katas .
-
-
-# Run the container
-run:
+	docker build -t code-katas . && \
 	docker run --rm code-katas
 
-# Get into the container shell
-shell:
-	\
+
+container.shell:
 	docker run -it --rm code-katas /bin/ash

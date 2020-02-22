@@ -27,5 +27,5 @@ export const gcd = (x, y) => {
   }
 
   return x;
-}
+};
 

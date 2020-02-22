@@ -1,21 +1,19 @@
-language: python
-sudo: required
-dist: xenial
-python:
-  - "3.7"
-
-# command to install dependencies
-install:
-  - pip install --upgrade pip
-  - pip install -r requirements.txt
-  - npm i
-
-# command to run tests
-script:
-  - make test
+jobs:
+  include:
+    - stage: Test JavaScript
+      language: node_js
+      node_js: 12
+      workspaces:
+        create:
+          name: coverage
+          paths: coverage/coverage-final.json
+    - stage: Test Python
+      language: python
+      python: 3.7
+      workspaces:
+        use: coverage
+      after_success:
+        - coveralls --merge=coverage/coverage-final.json
 
 notifications:
   email: false
-
-after_success:
-  - coveralls --merge=coverage/coverage-final.json

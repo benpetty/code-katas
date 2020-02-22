@@ -58,15 +58,12 @@ You may not assume that there is no extra whitespace on any line.
 
 
 class AutoCompleter(object):
-    """."""
-
     def __init__(self, vocab, max_completions=5):
         """Create an instance of AutoCompleter class."""
         self.vocab = [str(each) for each in vocab]
         self.max_completions = int(max_completions)
 
     def __call__(self, complete_me):
-        """."""
         if isinstance(complete_me, str):
             suggestions = []
             for word in self.vocab:

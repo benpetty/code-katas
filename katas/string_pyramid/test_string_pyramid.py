@@ -111,7 +111,6 @@ TESTS = [
 
 @pytest.mark.parametrize("arg, side_view, top_view, count_seen, count_all", TESTS)
 def test_pyramid_side_view(arg, side_view, top_view, count_seen, count_all):
-    """."""
     from .string_pyramid import watch_pyramid_from_the_side
 
     assert watch_pyramid_from_the_side(arg) == side_view
@@ -119,7 +118,6 @@ def test_pyramid_side_view(arg, side_view, top_view, count_seen, count_all):
 
 @pytest.mark.parametrize("arg, side_view, top_view, count_seen, count_all", TESTS)
 def test_pyramid_top_view(arg, side_view, top_view, count_seen, count_all):
-    """."""
     from .string_pyramid import watch_pyramid_from_above
 
     assert watch_pyramid_from_above(arg) == top_view
@@ -127,7 +125,6 @@ def test_pyramid_top_view(arg, side_view, top_view, count_seen, count_all):
 
 @pytest.mark.parametrize("arg, side_view, top_view, count_seen, count_all", TESTS)
 def test_pyramid_count_seen(arg, side_view, top_view, count_seen, count_all):
-    """."""
     from .string_pyramid import count_visible_characters_of_the_pyramid
 
     assert count_visible_characters_of_the_pyramid(arg) == count_seen
@@ -135,7 +132,6 @@ def test_pyramid_count_seen(arg, side_view, top_view, count_seen, count_all):
 
 @pytest.mark.parametrize("arg, side_view, top_view, count_seen, count_all", TESTS)
 def test_pyramid_count(arg, side_view, top_view, count_seen, count_all):
-    """."""
     from .string_pyramid import count_all_characters_of_the_pyramid
 
     assert count_all_characters_of_the_pyramid(arg) == count_all

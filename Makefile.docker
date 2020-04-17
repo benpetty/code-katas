@@ -1,0 +1,16 @@
+.PHONY: install test lint
+
+
+install:
+	@pip install -r requirements.txt
+	@npm i
+
+
+test:
+	@pytest
+	@npm test
+
+
+lint:
+	@black katas --check
+	@pylint katas

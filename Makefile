@@ -1,32 +1,41 @@
-.PHONY: install test container container.shell
-install: .install.python .install.javascript
+.PHONY: install test test.container requirements lint lint.fix update
 
 
-env:
-	python3 -m venv env
-
-
-.install.python: | env
-	source env/bin/activate && \
-	pip install --upgrade pip && \
-	pip3 install -r requirements.txt && \
-	pip3 install .
-
-
-.install.javascript:
+install:
+	@pipenv install --dev
 	@npm i
 
 
-test: | env
-	source env/bin/activate && \
-	pytest && \
-	npm test
+test:
+	@pipenv run pytest
+	@npm test
+
+
+test.container:
+	@docker build -t code-katas .
+	@docker run --rm code-katas
 
 
 container:
-	docker build -t code-katas . && \
-	docker run --rm code-katas
+	@docker run -it --rm code-katas /bin/ash
 
 
-container.shell:
-	docker run -it --rm code-katas /bin/ash
+requirements:
+	@pipenv lock -r --dev > requirements.txt
+
+
+lint:
+	@pipenv run black katas --check
+	@pipenv run pylint katas
+
+
+lint.fix:
+	@pipenv run black katas
+
+
+update:
+	@npm update
+	@npm audit fix
+	@npm outdated
+	@pipenv update
+	@pipenv run pip list -o

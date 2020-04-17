@@ -26,7 +26,7 @@ COPY package.json package-lock.json ./
 # Build config
 COPY setup.py .coveragerc pytest.ini ./
 COPY babel.config.js jest.config.js ./
-COPY Makefile .
+COPY Makefile.docker ./Makefile
 
 # Source Code
 ADD ./katas /code/katas

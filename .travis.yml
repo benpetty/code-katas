@@ -11,7 +11,9 @@ jobs:
     - stage: Test Python
       language: python
       python: 3.7
-      before_script: black katas --check
+      before_script:
+        - black katas --check
+        # - pylint katas
       script: pytest
       workspaces:
         use: coverage
